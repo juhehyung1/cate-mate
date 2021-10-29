@@ -1,17 +1,17 @@
 console.log('j load');
 // console.log($('h1'));
 
-// jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) {
 
-//     $(".scroll").click(function (event) {
+    $(".scroll").click(function (event) {
 
-//         event.preventDefault();
+        event.preventDefault();
 
-//         $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
 
-//     });
+    });
 
-// });
+});
 
 $(function () { // 보이기 | 숨기기 
     $(window).scroll(function () {
@@ -45,21 +45,4 @@ $(window).scroll(function () {
         $(".scroll_01").css("top", "0px");
     }
     lastScrollTop = scrollTop;
-});
-
-
-// $(document).ready(function(){
-//     $(window).scroll(function(){
-//       var scroll = $(window).scrollTop();
-//       if (scroll > 1) {
-//         $(".navbar a").css("color" , "#fff");
-//       }
-//       if (scroll > 1) {
-//         $(".navbar a").css("color" , "#fff");
-//       }
-//     })
-//   })
-
-$(function(){
-    var $
 });

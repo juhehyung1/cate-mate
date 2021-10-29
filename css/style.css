@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* 초기화 코드 */
 body, h1, h2, h3, h4, h5, h6, ul, ol, dl, p{
     margin: 0;
@@ -8,42 +6,29 @@ body, h1, h2, h3, h4, h5, h6, ul, ol, dl, p{
 }
 
 body{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight: 500;
     text-align: center;
     word-break: keep-all;
     font-size: 18px;
-
-    /* overflow-x: hidden; */
-    /* letter-spacing:1px; */
-    /* height: 2000px; */
-    /* background-color: orange; */
+    
 }
 
 .blind{
     display: none;
 }
-/* .inner {
-
-    width: 85%;
-    margin: 0 auto;
-} */
-
 /* -------------------------------header------------------------------ */
-/* --------------------------로고------------------------- */
+/* logo */
 header {
-    /* background-color: orange; */
     z-index: 1;
     top:0;
     left:0;
     width: 100%;
-    height: 85px;
-
-    /* position: fixed; */
-    border-bottom: 3px solid rgba(255, 255, 255, 0.205);
+    height: 80px;
+    
 }
 header a{
-    color: rgb(83, 56, 38);
+    color: #fff;
     text-decoration: none;
 }
 header .logo a{
@@ -54,36 +39,34 @@ header .logo a{
     display: block;
     width: 160px;
     height: 40px;
-    margin:19px 0;
+    margin:22px 0;
     /* background-image: url("../img/roudding_logo.png"); */
     /* background-size: 100% 100%; */
     background-repeat: no-repeat;
-    font-size: 30px;
+font-size: 30px;
     font-weight: 800s
+   
+}
+.orange{
+    background-color: #FF812D;
+}
+/* 메뉴 */
+
+.inner {
+        width: 80%;
+        margin: 0 auto;
 }
 
-
-/* --------------------------메뉴------------------------- */
-
-header{
-    /* border: 1px solid red; */
-
-}
-#inner{
-    /* border-bottom: 10px solid rgb(136, 31, 31); */
-    width: 85%;
-    margin: 0 auto;
-}
 header .mainMenu {
-    /* border: 1px solid black; */
     text-align: center;
     box-sizing: border-box;
      /* border: 1px solid blue; */
-     /* display: inline-block; */
+     display: inline-block;
      float: right;
      margin-top: 18px;
-     /* margin-bottom: 30px; */
+
 }
+
 header .mainMenu li {
        display: inline-block;
        margin-left: 30px;
@@ -98,32 +81,15 @@ header .mainMenu li a{
     height: 48px;
     line-height:50px;
     font-size: 1.167em;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
     /* border-bottom: 3px solid transparent; */
 }
-.navbar {
-    /* top: 0; */
-    /* background: rgba(255, 255, 255, 0.459); */
-    /* width:85%; */
-    /* height: 50px; */
-    /* margin-left: 120px; */
-}
-
-/* .navbar ul {
-    list-style-type: none;
-    padding: 0;
-} */
-/* .navbar a {
-    display: inline-block;
-    width: 100px;
-    color: rgb(255, 0, 0);
-} */
 /* 스크롤 메뉴 */
-.scroll_01{  background-color: #ffefe43f;}
+.scroll_01{  background-color: #FF812D;}
 /* 아래로 스크롤하면 배경이 사라지고 위로 스크롤 하면 배경이 생깁니다. */
 .scroll_01{ position:fixed;left:50%;width:100%;padding:0;text-align:center;transform:translate(-50%);transition:all .3s}
-/* li a span{
+li a span{
     display:inline-block;
     position:relative;
     vertical-align:top;
@@ -152,135 +118,4 @@ li a:hover span::after{
     -moz-transition:width 240ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
     -ms-transition:width 240ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
     -o-transition:width 240ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
-} */
-
-/* --------------------------section common------------------------- */
-section h2{
-    color: #FF812D;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 1.667em;
-}
-
-/* --------------------------메인------------------------- */
-.inner_main{
-    width: 80%;
-    margin: 0 auto;
-}
-.main_Section{
-    background-image: url("../img/main/main.jpg");
-    background-size: 103%;
-    background-repeat: no-repeat;
-    /* margin-top: -100px; */
-    margin-top: -89px;
-    height: 1100px;
-}
-/* 메인 설명 */
-.main_desc{
-    float: left;
-    margin-top:600px;
-    color: white;
-    width: 520px;
-}
-.main_text{
-    text-align: left;
-    margin-top: 15px;
-}
-.main_text h4{
-    font-family: 'Manrope', sans-serif;
-padding-left: 180px;
-font-weight: 500;
-font-size: 1.667em;
-
-}
-.main_text h3{
-    font-family: 'Manrope', sans-serif;
-    padding-left: 180px;
-    font-size:3.333em;
-    font-weight: 700;
-    letter-spacing:2px;
-    /* margin-top: -10px; */
-    line-height: 0.9em;
-}
-.main_text p{
-    padding-left: 180px;
-    font-weight: 400;
-    line-height: 2.5em;
-}
-.main_Section .logo img{
-    float: left;
-}
-/* 목업 */
-.app_list img{
-margin-top: 300px;
-margin-right: 70px;
-}
-.app_main img{
-    margin-top: -625px;
-    margin-right: 50px;
-    margin-left: 0;
-    float: right;
-}
-
-
-/* --------------------------intro video------------------------- */
-.intro_bg{
-    background-image: url("../img/intro/intro_bg2.png");
-    background-repeat: no-repeat; 
-    height: 2700px;
-    margin-top: -1000px;
-}
-.video_Section h2{
-    float: left;
-    margin-top: -5px;
-}
-.video_Section h3{
-    float: left;
-    color: #fff;
-    margin-left: 40px;
-    font-weight: 400;
-}
-/* .video_text h2, .video_text h3{
-    margin-top: -50px;
-} */
-.video_Section video{
-    width: 90%;
-    /* width: 1263px; */
-    height: 100%;
-    /* margin-left: 100px; */
-    margin-top: 60px;
-}
-
-
-
-/* --------------------------background------------------------- */
-.background_Section{
-    margin-top: -1600px;
-    /* border: 1px solid red; */
-    height: 920px;
-    padding-top: 100px;
-}
-.background_text{
-    text-align: left;
-}
-.background_text h3, .background_text p{
-    color: white;
-}
-.background_Section h2{
-    margin-top:180px;
-}
-.background_Section h3{
-    font-size: 2.333em;
-    margin-top: 40px;
-}
-.background_Section p{
-    font-size: 1.222em;
-    font-weight: 300;
-    margin-top: 100px;
-}
-
-.problem_bg{
-    /* border: 1px solid red; */
-    height: 1000px;
-    background-color: #333333;
 }
